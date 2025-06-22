@@ -1,0 +1,91 @@
+name: rural_health_app
+description: A new Flutter project.
+
+publish_to: 'none' # Remove this line if you wish to publish to pub.dev
+
+version: 1.0.0+1
+
+environment:
+  sdk: '>=3.0.0 <4.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+  flutter_localizations: # Required for GoRouter
+    sdk: flutter
+
+  # Core
+  cupertino_icons: ^1.0.2
+  get_it: ^7.6.7
+  injectable: ^2.3.4
+  dio: ^5.4.1
+  flutter_secure_storage: ^9.0.0 # For secure JWT storage
+  hive: ^2.2.3
+  hive_flutter: ^1.1.0
+  path_provider: ^2.1.2 # For Hive path
+
+  # State Management
+  flutter_bloc: ^8.1.4
+  equatable: ^2.0.5 # Used by BLoC for state comparison
+
+  # Data Models & Serialization
+  freezed: ^2.4.7
+  freezed_annotation: ^2.4.1
+  json_annotation: ^4.8.1
+
+  # Routing
+  go_router: ^13.2.0
+
+  # UI & UX
+  lottie: ^3.1.0
+  flutter_hooks: ^0.20.5 # Useful for animations and managing transient state
+  intl: ^0.19.0 # For date formatting etc.
+
+  # Utilities
+  dartz: ^0.10.1 # For functional programming constructs like Either
+  connectivity_plus: ^5.0.2 # For checking network connectivity
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+  flutter_lints: ^3.0.0
+  build_runner: ^2.4.8
+  injectable_generator: ^2.4.1
+  freezed_generator: ^2.4.7
+  json_serializable: ^6.7.1
+  hive_generator: ^2.0.1
+
+flutter:
+  uses-material-design: true
+
+  # To add assets to your application, add an assets section, like this:
+  assets:
+    - assets/animations/ # For Lottie animations
+  #   - images/a_dot_ham.jpeg
+
+  # An image asset can refer to one or more resolution-specific "variants", see
+  # https://flutter.dev/assets-and-images/#resolution-aware
+
+  # For details regarding adding assets from package dependencies, see
+  # https://flutter.dev/assets-and-images/#from-packages
+
+  # To add custom fonts to your application, add a fonts section here,
+  # in this "flutter" section. Each entry in this list should have a
+  # "family" key with the font family name, and a "fonts" key with a
+  # list giving the asset and other descriptors for the font. For
+  # example:
+  # fonts:
+  #   - family: Schyler
+  #     fonts:
+  #       - asset: fonts/Schyler-Regular.ttf
+  #       - asset: fonts/Schyler-Italic.ttf
+  #         style: italic
+  #   - family: Trajan Pro
+  #     fonts:
+  #       - asset: fonts/TrajanPro.ttf
+  #       - asset: fonts/TrajanPro_Bold.ttf
+  #         weight: 700
+  #
+  # For details regarding fonts from package dependencies,
+  # see https://flutter.dev/custom-fonts/#from-packages
